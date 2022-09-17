@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Listado Producto</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="agregarDatos()">
+                    
+                    <div>
+                        <label for="producto">Nombre Producto</label>
+                        <input type="text" name="producto" id="producto">
+                    </div>
+                    <div>
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" name="cantidad" id="cantidad">
+                    </div>
+                    <div>
+                        <label for="precio">Precio</label>
+                        <input type="number" name="precio" id="precio">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                        
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="lista">
+                        <thead>
+                            <tr>
+                               
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script src="./script.js"></script>
+    
+</body>
+</html>
